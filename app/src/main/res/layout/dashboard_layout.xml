@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/card"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+
+        android:layout_above="@+id/button"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/task_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OLA_KANNADA"
+            style="@style/CustomFontStyle"
+            android:padding="5dp"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/task_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:text="Learning Task for Lesson Meet n Greet Customers_Kannada"/>
+
+            <ImageView
+                android:id="@+id/task_image_URL"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <TextView
+                android:id="@+id/task_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="Learning task for lesson Meet n Greet Customers_Kannada"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/button"
+        android:drawableLeft="@mipmap/presentaion_icon"
+        android:drawableTint="#ffffff"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/button_shape"
+        android:textColor="#ffffff"
+        android:paddingLeft="15dp"
+        android:textSize="17dp"
+        android:text="WATCH PRESENTATION"
+        />
+</LinearLayout>
